@@ -1,9 +1,19 @@
-import ThreeScene1 from "./components/Three1";
+"use client";
 
-export default function Home() {
+import React from "react";
+import dynamic from "next/dynamic";
+
+// Dynamically import Canvas with SSR disabled
+const DynamicCanvas = dynamic(() => import("@react-three/fiber").then((mod) => mod.Canvas), {
+  ssr: false,
+});
+
+function Threefiber1() {
   return (
-    <div>
-       <ThreeScene1/>
-    </div>
+    <DynamicCanvas>
+       hi
+    </DynamicCanvas>
   );
 }
+
+export default Threefiber1;

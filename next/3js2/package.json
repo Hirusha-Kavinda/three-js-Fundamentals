@@ -1,15 +1,16 @@
 {
-  "name": "3js_1",
+  "name": "3js2",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
-    "@react-three/fiber": "^8.17.12",
+    "@react-three/drei": "^9.121.1",
+    "@react-three/fiber": "^9.0.0-alpha.8",
     "next": "15.1.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
@@ -20,7 +21,6 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "@types/three": "^0.172.0",
     "eslint": "^9",
     "eslint-config-next": "15.1.4",
     "postcss": "^8",
